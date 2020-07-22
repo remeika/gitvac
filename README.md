@@ -1,7 +1,7 @@
 # gitvac
 Boldly clean your local git repo.
 
-A tiny script based on this SO answer that deletes any local orphaned git branches. gitvac will:
+A tiny script based on an [SO answer](https://stackoverflow.com/a/38404202/2701578) that deletes any local orphaned git branches. gitvac will:
 
 - Not touch any branches that also exist on your remote
 - Delete any branches that _used_ to exist on your remote, but no longer do
