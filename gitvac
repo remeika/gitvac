@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# gitvac: clean up orphaned git branches
+# source: https://stackoverflow.com/a/38404202/2701578
+
+git fetch -p && \
+for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}');
+    do git branch -D $branch;
+done
